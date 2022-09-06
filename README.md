@@ -6,7 +6,7 @@ Pandas makes it possible to work with tabular data and perform all parts of the 
 
 ## Outline
 
-It's divided into the following sections:
+The labs are divided into the following sections:
 
 ### Section 0: Python 101
 We start with a crash course on python.
