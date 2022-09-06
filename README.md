@@ -52,9 +52,7 @@ Download and install [Visual Studio Code](https://code.visualstudio.com/) on you
 ### Creating Azure Virtual machine
 1. Go to the [Azure portal](https://portal.azure.com/) and click on `+ Create a resource`, find the `Virtual machine` service and click on `Create`. 
 
-![fig1](./images/resource.png)                  
-
-![fig2](./images/VM.png)
+![fig1](./images/resource.png)              ![fig2](./images/VM.png)
 
 2. Insert the basic information for your VM:
     - Make sure the subscription is `Azure for Students`
@@ -65,7 +63,7 @@ Download and install [Visual Studio Code](https://code.visualstudio.com/) on you
     - Set the size of the VM to `Standard_B2s`
     - Choose SSH for the Authentication type
     
-![fig3](./images/VM_basic.PNG)
+![fig3](./images/VM_basic.png)
 
 3. Go to the `Networking` tab and click `create new` for public IP. Make sure to choose `Basic` SKU and `Dynamic` Assignment.
 
