@@ -21,7 +21,7 @@ Pandas makes it possible to work with tabular data and perform all parts of the 
 The labs are divided into the following sections:
 
 ### Section 0: Python 101
-We start with a crash course on python. A more extensive tutorial can be https://docs.python.org/3/tutorial/
+We start with a crash course on python. A more in depth tutorial can be found [here](https://docs.python.org/3/tutorial/)
 
 ### Section 1: Getting Started With Pandas
 We will begin by introducing the `Series`, `DataFrame`, and `Index` classes, which are the basic building blocks of the pandas library, and showing how to work with them. By the end of this section, you will be able to create DataFrames and perform operations on them to inspect and filter the data.
@@ -82,6 +82,12 @@ Download and install [Visual Studio Code](https://code.visualstudio.com/) on you
 - Keep a regular eye on your costs in the `Cost analysis` service under the `Cost management`. 
 
     ![](./images/cost.png)
+
+### Using VS Code to connect to your VM with SSH
+
+1. Open VS Code.
+
+
 
 ### Cloning the repo to your VM
 
