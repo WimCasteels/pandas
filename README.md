@@ -1,5 +1,7 @@
 # The Data Foundations Labs 
 
+    ![location of fork button in GitHub](./images/fork_button.png)
+
 Welcome to the first lab of the Data Foundations course. As you can see the lab instructions are in English. 
 
 Python is increasingly becoming the standard programming language for data applications and so we will use python during the labs. Prior knowledge of python is not required but it can help. We will start with a python crash course to get you up to speed. For the lab we use [jupyter notebooks](https://jupyter.org/) which is a popular intuitive tool well suited to experiment and develop python code. 
