@@ -50,7 +50,7 @@ Download and install [Visual Studio Code](https://code.visualstudio.com/) on you
 ### Creating Azure Virtual machine
 1. Go to the [Azure portal](https://portal.azure.com/) and click on `+ Create a resource`, find the `Virtual machine` service and click on `Create`. 
 
-    ![res](./images/resource.png)                  ![VM](./images/VM.png)
+    ![fig1](./images/resource.png)                  ![fig2](./images/VM.png)
 
 2. Insert the basic information for your VM:
     - Make sure the subscription is `Azure for Students`
@@ -61,15 +61,15 @@ Download and install [Visual Studio Code](https://code.visualstudio.com/) on you
     - Set the size of the VM to `Standard_B2s`
     - Choose SSH for the Authentication type
     
-    ![VM](./images/VM_basic.png)
+    ![fig3](./images/VM_basic.png)
 
 3. Go to the `Networking` tab and click `create new` for public IP. Make sure to choose `Basic` SKU and `Dynamic` Assignment.
 
-    ![](./images/IP.png)
+    ![fig4](./images/IP.png)
 
 4. Under the `Management` tab tick the `Enable auto-shutdown` to avoid large bills
     
-    ![](./images/shutdown.png)
+    ![fig5](./images/shutdown.png)
 
 5. Go the the `Review + create` tab and click `create`.
 
@@ -79,7 +79,7 @@ Download and install [Visual Studio Code](https://code.visualstudio.com/) on you
 
 1. Go to your VM in the Azure console and copy your public IP (this will be different each time you restart the VM)
 
-    ![](./images/publicIP.png)
+    ![fig6](./images/publicIP.png)
 
 2. Open VS Code.
 
@@ -99,11 +99,11 @@ Next time you connect you will have to choose `Remote-SSH: Connect to Host...` -
 
 1. In the Github Classroom repo click on Code and copy the link. 
 
-    ![](./images/repo.png)
+    ![fig7](./images/repo.png)
     
 2. In your VS Code that is conncted to your VM go to `SOURCE CONTROL`, choose `Clone Repository` and paste the Github link.
 
-    ![](./images/clone_repo.png)
+    ![fig8](./images/clone_repo.png)
 
 ### Installing Miniconda on your VM, create a virtual environment and launch Jupyterlab
 
@@ -126,8 +126,8 @@ Next time you connect you will have to choose `Remote-SSH: Connect to Host...` -
 
 - Always stop your VM when you are ready by going to the VM resource and clicking the stop button.
     
-    ![](./images/stop.png)
+    ![fig9](./images/stop.png)
     
 - Keep a regular eye on your costs in the `Cost analysis` service under the `Cost management`. 
 
-    ![](./images/cost.png)
+    ![fig10](./images/cost.png)
