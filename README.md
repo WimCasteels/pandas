@@ -1,4 +1,16 @@
-# Pandas
+# The Data Foundations Labs 
+
+Welcome to the first lab of the Data Foundations course. As you can see the lab instructions are in English. 
+
+As python is increasingly becoming the standard programming language for data applications we will also use python during the labs. Prior knowledge of python can help you during the labs but is not required. We will start with a python crash course to get you up to speed. We will use python interactively with jupyter notebooks. These are a great and intuitive tool to experiment and develop python code. 
+
+We will use Github Classroom to distribute the labs. This will also be used to evaluate your work. Make sure to push your work to the repo before the deadline!
+
+To make sure that everyone works in the same environment this lab will be done on a VM in the Azure Cloud. With the [Azure for Students](https://azure.microsoft.com/en-us/free/students/) program you receive $100 Azure credit plus several free services which should be more than sufficient for the course labs. Assuming you stop the VM after working on the lab and you do not spend your credit on other purposes.
+
+Below you can find step-by-step instructions on how to set-up the VM.
+
+# Lab 1: Pandas
 
 Working with data can be challenging: it often doesn’t come in the best format for analysis, and understanding it well enough to extract insights requires both time and the skills to filter, aggregate, reshape, and visualize it. This session will equip you with the knowledge you need to effectively use pandas – a powerful library for data analysis in Python – to make this process easier.
 
@@ -9,7 +21,7 @@ Pandas makes it possible to work with tabular data and perform all parts of the 
 The labs are divided into the following sections:
 
 ### Section 0: Python 101
-We start with a crash course on python.
+We start with a crash course on python. A more extensive tutorial can be https://docs.python.org/3/tutorial/
 
 ### Section 1: Getting Started With Pandas
 We will begin by introducing the `Series`, `DataFrame`, and `Index` classes, which are the basic building blocks of the pandas library, and showing how to work with them. By the end of this section, you will be able to create DataFrames and perform operations on them to inspect and filter the data.
@@ -26,8 +38,64 @@ We will practice all that you’ve learned in a hands-on lab. This section featu
 ---
 
 ## Setup Instructions
-0. Install Python >= version 3.8.0 and <= version 3.10.2 OR install [Anaconda](https://docs.anaconda.com/anaconda/install/)/[Miniconda](https://docs.conda.io/en/latest/miniconda.html). Note that Anaconda/Miniconda is recommended if you are working on a Windows machine and are not very comfortable with the command line. Alternatively, you can use [this](https://mybinder.org/v2/gh/stefmolin/pandas-workshop/main?urlpath=lab) Binder environment if you don't want to install anything on your machine.
-1. Fork this repository:
+
+### Azure for students account
+Sign up for your free [Azure for students](https://azure.microsoft.com/en-us/free/students/) account by registering with your school email. You will receive $100 credits)
+
+### VS Code
+Download and install [Visual Studio Code](https://code.visualstudio.com/) on your local machine.
+
+### Creating Azure Virtual machine
+1. Go to the [Azure portal](https://portal.azure.com/) and click on `+ Create a resource`, find the `Virtual machine` service and click on `Create`. 
+
+    ![res](./images/resource.png)                  ![VM](./images/VM.png)
+
+2. Insert the basic information for your VM:
+    - Make sure the subscription is `Azure for Students`
+    - Make a new Resource group (for example `Data-Foundations`)
+    - Choose a name for the VM (for example 'DF-lab')
+    - Set the region to West-Europe
+    - Make sure you choose this image: `Ubuntu 18.04 LTS with Python and Docker`
+    - Set the size of the VM to `Standard_B2s`
+    - Choose SSH for the Authentication type
+    
+    ![VM](./images/VM_basic.png)
+
+3. Go to the `Networking` tab and click `create new` for public IP. Make sure to choose `Basic` SKU and `Dynamic` Assignment.
+
+    ![](./images/IP.png)
+
+4. Under the `Management` tab tick the `Enable auto-shutdown` to avoid large bills
+    
+    ![](./images/shutdown.png)
+
+5. Go the the `Review + create` tab and click `create`.
+
+6. Download your private key and save it in the `~./ssh` folder.
+
+### Keeping costs at a minimum
+
+- Always stop your VM when you are ready by going to the VM resource and clicking the stop button.
+    
+    ![](./images/stop.png)
+    
+- Keep a regular eye on your costs in the `Cost analysis` service under the `Cost management`. 
+
+    ![](./images/cost.png)
+
+### Cloning the repo to your VM
+
+### Installing miniconda and create a cirtual environment
+
+### Launch Jupyterlab
+
+
+
+
+
+
+
+2. Fork this repository:
 
     ![location of fork button in GitHub](./images/fork_button.png)
 
