@@ -2,7 +2,7 @@
 
 Welcome to the first lab of the Data Foundations course. As you can see the lab instructions are in English. 
 
-As python is increasingly becoming the standard programming language for data applications we will also use python during the labs. Prior knowledge of python can help you during the labs but is not required. We will start with a python crash course to get you up to speed. We will use python interactively with jupyter notebooks. These are a great and intuitive tool to experiment and develop python code. 
+Python is increasingly becoming the standard programming language for data applications and so we will use python during the labs. Prior knowledge of python is not required but it can help. We will start with a python crash course to get you up to speed. For the lab we use jupyter notebooks which is a popular intuitive tool well suited to experiment and develop python code. 
 
 We will use Github Classroom to distribute the labs. This will also be used to evaluate your work. Make sure to push your work to the repo before the deadline!
 
@@ -15,6 +15,8 @@ Below you can find step-by-step instructions on how to set-up the VM.
 Working with data can be challenging: it often doesn’t come in the best format for analysis, and understanding it well enough to extract insights requires both time and the skills to filter, aggregate, reshape, and visualize it. This session will equip you with the knowledge you need to effectively use pandas – a powerful library for data analysis in Python – to make this process easier.
 
 Pandas makes it possible to work with tabular data and perform all parts of the analysis from collection and manipulation through aggregation and visualization. While most of this session focuses on pandas, during our discussion of visualization, we will also introduce at a high level Matplotlib (the library that pandas uses for its visualization features, which when used directly makes it possible to create custom layouts, add annotations, etc.) and Seaborn (another plotting library, which features additional plot types and the ability to visualize long-format data).
+
+The material for this lab is based on a [workshop on Pandas](https://github.com/stefmolin/pandas-workshop) by Stefanie Molin ([@stefmolin](https://github.com/stefmolin)).
 
 ## Outline
 
@@ -73,7 +75,54 @@ Download and install [Visual Studio Code](https://code.visualstudio.com/) on you
 
 6. Download your private key and save it in the `~./ssh` folder.
 
-### Keeping costs at a minimum
+### Using VS Code to connect to your VM with SSH
+
+1. Go to your VM in the Azure console and copy your public IP (this will be different each time you restart the VM)
+
+    ![](./images/publicIP.png)
+
+2. Open VS Code.
+
+3. Select `Remote-SSH: Connect to Host...` from the Command Palette (F1, Ctrl+Shift+P)
+
+4. Click `+ Add New SSH Host...`
+
+5. type `ssh -i ~/.ssh/DF-lab_key.pem azureuser@20.160.99.1` (where you replace the IP address with the one for your VM from step 1)
+
+6. Choose the `~/.ssh/config` file to save your connection details
+
+7. Click Connect. A new VS Code window will open that is connected to your VM
+
+Next time you connect you will have to choose `Remote-SSH: Connect to Host...` -> `Configure SSH Hosts...` to change the IP address. Then you can just click the name of the connection.
+
+### Cloning the repo to your VM
+
+1. In the Github Classroom repo click on Code and copy the link. 
+
+    ![](./images/repo.png)
+    
+2. In your VS Code that is conncted to your VM go to `SOURCE CONTROL`, choose `Clone Repository` and paste the Github link.
+
+    ![](./images/clone_repo.png)
+
+### Installing Miniconda on your VM, create a virtual environment and launch Jupyterlab
+
+1. Open a terminal on your VM and go to the `conda` folder and type `bash Miniconda3-py39_4.12.0-Linux-x86_64.sh` and follow the instructions.
+
+2. Go to the main pandas folder and create and activate a virtual environment: 
+```shell
+(base) azureuser@DF-lab:~$ cd pandas 
+(base) azureuser@DF-lab:~/pandas$ conda env create --file environment.yml
+(base) azureuser@DF-lab:~/pandas$ conda activate pandas
+(pandas) azureuser@DF-lab:~/pandas$
+```
+
+3. Launch jupyter lab:
+```shell
+(pandas) azureuser@DF-lab:~/pandas$ jupyter lab
+```
+
+### Keeping costs at a minimum: stop your VM
 
 - Always stop your VM when you are ready by going to the VM resource and clicking the stop button.
     
@@ -82,60 +131,3 @@ Download and install [Visual Studio Code](https://code.visualstudio.com/) on you
 - Keep a regular eye on your costs in the `Cost analysis` service under the `Cost management`. 
 
     ![](./images/cost.png)
-
-### Using VS Code to connect to your VM with SSH
-
-1. Open VS Code.
-
-
-
-### Cloning the repo to your VM
-
-### Installing miniconda and create a cirtual environment
-
-### Launch Jupyterlab
-
-
-
-
-
-
-
-2. Fork this repository:
-
-    ![location of fork button in GitHub](./images/fork_button.png)
-
-2. Clone your forked repository:
-
-    ![location of clone button in GitHub](./images/clone_button.png)
-
-3. Create and activate a Python virtual environment:
-    - If you installed Anaconda/Miniconda, use `conda` (on Windows, these commands should be run in **Anaconda Prompt**):
-
-        ```shell
-        $ cd pandas-workshop
-        ~/pandas-workshop$ conda env create --file environment.yml
-        ~/pandas-workshop$ conda activate pandas_workshop
-        (pandas_workshop) ~/pandas-workshop$
-        ```
-
-    - Otherwise, use `venv`:
-
-        ```shell
-        $ cd pandas-workshop
-        ~/pandas-workshop$ python3 -m venv pandas_workshop
-        ~/pandas-workshop$ source pandas_workshop/bin/activate
-        (pandas_workshop) ~/pandas-workshop$ pip3 install -r requirements.txt
-        ```
-
-4. Launch JupyterLab:
-
-    ```shell
-    (pandas_workshop) ~/pandas-workshop$ jupyter lab
-    ```
-
----
-
-## Reference
-This material was adopted from an [introductory workshop on Pandas](https://github.com/stefmolin/pandas-workshop) by Stefanie Molin ([@stefmolin](https://github.com/stefmolin)).
-
