@@ -1,4 +1,4 @@
-name: pandas_workshop
+name: pandas
 channels: 
     - conda-forge
 dependencies: 
