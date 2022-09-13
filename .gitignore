@@ -1,6 +1,5 @@
 Oplossingen/
-Oplossingen/*.ipynb
-slides/*
+slides/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
