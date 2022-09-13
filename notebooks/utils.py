@@ -45,3 +45,9 @@ def run_env_check():
             print(OK, '%s' % pkg)
         except ImportError:
             print(FAIL, '%s not installed.' % pkg)
+
+def despine(ax):
+    """Hide the top and right spines on a Matplotlib Axes object."""
+    for spine in ['top', 'right']:
+        ax.spines[spine].set_visible(False)
+    return ax
