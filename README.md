@@ -16,11 +16,11 @@ Pandas makes it possible to work with tabular data and perform all parts of the 
 
 Once you have finished the setup (see below) you can start with the lab exercices. At the end of each section there are exercices and the final section is a lab exercice. Make sure to make the exercices and commit your notebooks to Github Classroom before the deadline. 
 
-The material for this lab is based on a [workshop on Pandas](https://github.com/stefmolin/pandas-workshop) and a workshop on data visualization]() by Stefanie Molin ([@stefmolin](https://github.com/stefmolin)).
+The material for this lab is based on a [workshop on Pandas](https://github.com/stefmolin/pandas-workshop) and a [workshop on data visualization](https://github.com/stefmolin/python-data-viz-workshop) by Stefanie Molin ([@stefmolin](https://github.com/stefmolin)).
 
 ## outline
 
-The labs are divided into the following sections:
+The lab is divided into the following sections:
 
 ### Section 0: Python 101
 We start with a crash course on python. A more in depth tutorial can be found [here](https://docs.python.org/3/tutorial/)
