@@ -1,6 +1,6 @@
 # Data Foundations Labs 
 
-Welcome to the first lab of the Data Foundations course. As you can see the lab instructions are in English. 
+Welcome to the first lab of the Data Foundations course.
 
 Python is increasingly becoming the standard programming language for data applications and we will also use python during the labs. Prior knowledge of python is not required but it can help. We start with a short python crash course to get you up to speed. We use [jupyter notebooks](https://jupyter.org/) which is a popular intuitive tool that is well suited to experiment and develop python code. 
 
@@ -26,13 +26,13 @@ In the Github Classroom repo click on Code and copy the link to clone the reposi
 ```shell
 (base) ~$ cd pandas 
 (base) ~/pandas$ conda env create --file environment.yml
-(base) ~/pandas$ conda activate pandas
-(pandas) ~/pandas$
+(base) ~/pandas$ conda activate DF-lab-1
+(DF-lab-1) ~/pandas$
 ```
 
 2. Launch jupyter lab in your browser:
 ```shell
-(pandas) ~/pandas$ jupyter lab
+(DF-lab-1) ~/pandas$ jupyter lab
 ```
 
 3. Navigate to the `notebooks` folder and open a notebook by double clicking on it.
