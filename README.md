@@ -10,7 +10,7 @@ Below you can find step-by-step instructions on how to get started with the firs
 
 # Setup Instructions
 
-### 1. Install Miniconda 
+### 1. Install Miniconda or Anaconda
 We will use conda to manage the necesary python libraries for the lab. If you don't have Miniconda or Anaconda on your device install the latest version of [Miniconda](https://docs.conda.io/en/latest/miniconda.html).   
 
 ### 2. Clone the repo to your VM
